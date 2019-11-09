@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis|Eczar&display=swap');
+
+html, body, .grid-container { 
+  height: 100%; 
+  margin: 0; 
+  font-family: "Dosis", sans-serif;
+}
+
+.grid-container * { 
+ position: relative;
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.4fr 0.4fr 1.8fr 1.7fr 0.7fr;
+  grid-template-areas: "logo logo logo logo" "nav-bar nav-bar nav-bar nav-bar" "banner banner banner banner" "function-1 function-1 function-2 function-2" "footer footer footer footer";
+}
+
+.logo { 
+  grid-area: logo; 
+  background-color: #f4f4f4;  
+}
+
+.nav-bar { 
+  grid-area: nav-bar; 
+}
+
+.banner { 
+  grid-area: banner; 
+  margin-bottom: 20px;  
+}
+
+.function-1 { 
+  grid-area: function-1; 
+  margin-right: 10px;
+  margin-left: 30px;
+  margin-bottom: 80px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; 
+  border-radius: 20px;
+  border-style: dashed;
+  border-color: #9bcdee;
+}
+
+.function-2 { 
+  grid-area: function-2; 
+  margin-right: 30px;
+  margin-left: 10px;
+  margin-bottom: 80px;
+  padding: 50px;
+  border-radius: 20px;
+  border-style: dashed;
+  border-color: #9bcdee;
+}
+
+
+.footer { 
+  grid-area: footer; 
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  margin-bottom: 0 auto;
+  display: flex;
+  flex-direction: row; 
+  align-items: center;
+  background-color: #ddecf7;
+  opacity: 90%;
+}
+
+/*horizontal nav bar*/
+
+.nav-bar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(49, 49, 49);
+}
+
+.nav-bar li {
+  float: left;
+  margin: 2px 0 2px 3px;
+  width: 15%;
+  border: 1px solid #838383;
+  border-radius: 4px;
+}
+
+.nav-bar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+}
+
+.nav-bar li a:hover {
+  background-color: rgb(73, 73, 73);
+}
+
+.nav-bar li a:active {
+  background-color: rgb(22, 22, 22);
+}
+
+.nav-bar input[type=text] {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 10px;
+  margin-right: 10px;
+  font-family: "Dosis", sans-serif;
+  font-size: 16px;
+  border-radius: 10px;
+}
+
+/*Banner Image*/
+
+figure.image-container {
+  max-width: 1400px;
+  margin: 50px auto;
+}
+
+figure.image-container figcaption,
+label {
+	display: block;
+	text-align: center;
+}
+
+figure.image-container img {
+	display: block;
+	width: 100%;
+  margin: auto;
+  border-radius: 30px;
+}
+
+/*Icons*/
+
+.function-1 h3 {
+  width: 100%;
+  padding: 10px;
+  align-content: flex-start;
+}
+
+figure.icon-container {
+  max-width: 160px;
+  max-height: 160px;
+  min-width: 60px;
+  min-height: 60px;
+  margin: auto;
+  padding: 30px;
+  align-content: flex-start;
+}
+
+figure.icon-container:hover {
+  opacity: 70%;
+}
+
+figure.icon-container figcaption,
+label {
+	display: block;
+  text-align: center;
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+figure.icon-container img {
+	display: flex;
+	width: 100%;
+  margin: inherit auto;
+}
+
+/*Function2 - introduction*/
+
+.function-2 h2 {
+  color: #256c9c;
+}
+
+.function-2 ul li {
+  font-size: 18px;
+}
+
+.intro-parts {
+  padding: 5px 15px;
+  border: none;
+  border-radius: 10px;
+  background-color: #f4f7f8;
+}
+
+/*Footer Sec*/
+
+.footer button[type = button] {
+  width: 160px;
+  padding: 5px;
+  margin: 0 auto;
+  border-radius: 10px;
+  justify-content: right;
+  bottom: 0px;
+  font-family: "Dosis", sans-serif;
+  font-size: 18px;  
+  opacity: 100%;
+  border: 2px solid #56a9e0;
+  background-color: #70b5e4;
+}
+
+.footer a{
+  justify-content: right;
+  margin: 3px;
+  opacity: 100%;
+}
+
+a.SignUp-Access:link {
+  opacity: 100%;
+}
+
+a.SignUp-Access:visited {
+  opacity: 100%;
+}
+
+a.SignUp-Access:hover {
+  opacity: 80%;
+}
+
+a.SignUp-Access:active {
+  opacity: 50%;
+  text-decoration: underline;
+}
+
+#slogan {
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 5px;
+  font-size: 18px;
+  opacity: 100%;
+}
+
+
+@media screen and (max-width: 768px) {
+  .nav-bar ul li {
+    width: 20%;
+  }
+  figure.icon-container {
+    max-width: 120px;
+    max-height: 120px;
+  }
+  .function-2 {
+    display: block;
+  }
+  .intro-parts {
+    width: 80%;
+    padding: 5px 30px 10px 5px;
+    border: none;
+    background-color: #ffffff;
+  }
+}
+
+
+@media screen and (max-width: 425px) {
+  html, body, .grid-container { 
+    width: 100%; 
+    margin: 0; 
+    font-family: "Dosis", sans-serif;
+  }
+  .grid-container * { 
+   position: relative;
+  }
+  .grid-container {
+    display: block;
+  }
+  .nav-bar {
+    display: block;
+  }
+  .nav-bar ul li {
+    width: 30%;
+  }
+  .nav-bar input[type=text] {
+    float: right;
+    margin: 5px 3px;
+    width: 45%;
+  }
+  .function-1 {
+    margin: auto;
+    margin-bottom: 10px;
+  }
+  figure.icon-container {
+    max-width: 100px;
+    max-height: 100px;
+  }
+  .function-2 {
+    margin: auto;
+    margin-bottom: 20px;
+  }
+}

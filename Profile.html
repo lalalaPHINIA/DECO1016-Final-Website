@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>User Profile - Classic Vocal Collection</title>
+  <link rel="stylesheet" href="Profile.css">
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+</head>
+<body>
+    <div class="grid-container">
+        <div class="logo">
+            <a href="Landing.html">
+                <img src = "LOGO.png" alt = "Logo" style="width: auto; height: 80px;">
+            </a>
+        </div>
+
+
+        <div class="nav-bar">
+            <img src = "Photo.png" alt = "Profile Photo">       
+            <ul>
+                <li><a href="#card-1-bm">
+                <h3 id="card-1-tab">Account Profile</h3>
+                </a></li>
+                <li><a href="#card-2-bm">
+                <h3 id="card-2-tab">Past Experience About Music</h3>
+                </a></li>
+                <li><a href="#card-3-bm">
+                <h3 id="card-3-tab">Advices</h3>
+                </a></li>
+            </ul>
+        </div>
+
+
+        <div class="card-1" id="card-1-bm">
+            <h2>Account Profile</h2>
+            <p class="card-detail">Improve your account information for better experience with us.</p>
+            <hr>
+            <br>
+            <form>
+                <div class="form-group">
+                    <h3>Field of Work</h3>
+                    <div class="radio-option">
+                    <input type="radio" name="answer" value="art"> Art
+                    </div>
+
+                    <div class="radio-option">
+                    <input type="radio" name="answer" value="business"> Business
+                    </div>
+                    <div class="radio-option">
+                    <input type="radio" name="answer" value="education"> Education
+                    </div>
+                    <div class="radio-option">
+                    <input type="radio" name="answer" value="engineering"> Engineering
+                    </div>
+
+                    <div class="radio-option">
+                    <input type="radio" name="answer" value="media"> Media
+                    </div>
+
+                    <div class="radio-option">
+                    <input type="radio" name="answer" value="medicine"> Medicine
+                    </div>
+                    <div class="radio-option">
+                    <input type="radio" name="answer" value="music"> Music
+                    </div>
+
+                    <div class="radio-option">
+                    <input type="radio" name="answer" value="science"> Science
+                    </div>
+
+                    <div class="radio-option">
+                    <input type="radio" name="answer" value="other"> Other
+                    <input type="text" name="other" id="custom-input" placeholder="Enter your answer here.">
+                    </div>
+                </div>
+                <br>
+                <hr>
+                <div class="form-group">
+                    <h3>Address</h3>
+                    <p class="card-detail">Please inform the city you are in to get updated with nearby performances.</p>
+                    
+                    <div class="add-form">
+                    <label for="region">Region</label>
+                    <input type="text" name="region" id="region" placeholder="E.x.: Sydney">
+                    </div>
+
+                    <div class="add-form">
+                    <label for="state">State</label>
+                    <select name="state" id="state">
+                            <option value="audi" selected>-Select your state.-</option>
+                            <option value="nsw">NSW</option>
+                            <option value="qld">QLD</option>
+                            <option value="sa">SA</option>
+                            <option value="tas">TAS</option>
+                            <option value="vic">VIC</option>
+                            <option value="wa">WA</option>
+                            <option value="act">ACT</option>
+                            <option value="jbt">JBT</option>
+                            <option value="nt">NT</option>
+                    </select>
+                    </div>
+
+                    <div class="add-form">
+                    <label for="country">Country</label>
+                    <input type="text" name="country" id="country" value="Australia" readonly>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+
+        <div class="card-2" id="card-2-bm">
+            <h2>Past Experience About Music</h2>
+            <p class="card-detail">Provide music related information to customize your push content.</p>
+            <hr>
+            <br>
+            <form>
+                <div class="form-group">
+                    <p class="question">Have you ever learned about classical music or music theory?</p>
+                    <div class="radio-option">
+                    <input type="radio" name="answer" value="true"> Yes
+                    </div>
+                    <div class="radio-option">
+                    <input type="radio" name="answer" value="false"> No
+                    </div>
+                </div>
+                <br>
+                <hr>
+                <br>
+                <div class="form-group">
+                    <p class="question">Have you ever been to a live performance?</p>
+                    <div class="radio-option">
+                    <input type="radio" name="answer" value="true"> Never
+                    </div>
+                    <div class="radio-option">
+                    <input type="radio" name="answer" value="neutral"> Yes, but not classical music
+                    </div>
+                    <div class="radio-option">
+                    <input type="radio" name="answer" value="false"> Yes
+                    </div>
+                </div>
+                <br>
+                <hr>
+                <br>
+                <div class="form-group">
+                    <p class="question">Will you initialively purchase tickets for a classical music performance?</p>
+                    <div class="radio-option">
+                    <input type="radio" name="answer" value="true"> Yes
+                    </div>
+                    <div class="radio-option">
+                    <input type="radio" name="answer" value="neutral"> Maybe will try
+                    </div>
+                    <div class="radio-option">
+                    <input type="radio" name="answer" value="false"> No
+                    </div>
+                    </div>
+            </form>
+        </div>
+
+
+        <div class="card-3" id="card-3-bm">
+            <h2>Advices</h2>
+            <p class="card-detail">We sincerely invite our users to help us improve this platform.</p>
+            <form class="advice-form">
+                <textarea name="message" id="advices" placeholder="Please give us some advices."></textarea>
+                <a href="Landing.html" class="to-land" id="">
+                    <button type="button" id="submit">Submit</button>
+                </a>
+            </form>
+        </div>
+
+
+        <div class="notice">
+            <p>Or just skip this and enjoy the music!</p>
+            <a href="Landing.html" class="to-land">
+                <button type="button" id="jump-to-main">Exit</button>
+            </a>
+        </div>
+
+    </div>
+</body>
+</html>

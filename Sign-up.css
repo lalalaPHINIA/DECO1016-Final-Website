@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis|Eczar&display=swap');
+
+html, body, .grid-container { 
+  height: 100%; 
+  margin: 0; 
+  font-family: "Dosis", sans-serif;
+}
+
+.grid-container * { 
+  position: relative;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.4fr 2fr 0.6fr;
+  grid-template-areas: "logo" "card" "footer";
+}
+
+.logo { 
+  grid-area: logo; 
+  background-color: #f4f4f4;
+}
+
+.card { 
+  grid-area: card; 
+  
+}
+
+.footer { 
+  grid-area: footer; 
+  height: 30px;
+}
+
+
+body {
+  background-color:#56a9e0;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Eczar', serif;
+  color: #f4f4f4;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+#slogan {
+  margin: 20px;
+}
+
+#logo {
+  width: 15%;
+  height: auto;
+  margin: 0 auto;
+}
+
+
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  color: #636363;
+  background: #f4f4f4;
+  width: 50%;
+  padding: 40px;
+  border-radius: 10px;
+  border-color: #256c9c;
+  border-width: 2px;
+  border-style: dotted;
+}
+
+#radio-group {
+  justify-content: space-around;
+}
+
+form * {
+  box-sizing: border-box;
+}
+
+hr {
+  border-style: solid;
+  color: #56a9e0;;
+}
+
+.form-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px;
+}
+
+.form-group label{
+  font-size: 20px;
+  text-align: right;
+  padding-right: 20px;
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 120px;
+}
+
+
+label + * {
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: auto;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #256c9c;
+  border-radius: 10px; 
+  font-family: "Dosis", sans-serif;
+  font-size: 14px;
+}
+
+button[type = button] {
+  width: 160px;
+  height: 50px;
+  padding: 10px;
+  margin: auto;
+  border: 2px solid #5db17d;
+  background-color: #2dbd64;
+  color: #e9fbff;
+  border-radius: 15px;
+  font-family: "Dosis", sans-serif;
+  font-size: 20px;
+}
+
+a#submit:link {
+  opacity: 100%;
+}
+
+a#submit:visited {
+  opacity: 100%;
+}
+
+a#submit:hover {
+  opacity: 80%;
+}
+
+a#submit:active {
+  opacity: 50%;
+  text-decoration: underline;
+}
+
+
+
+
+/* ---------------------
+ADD MEDIA QUERIES BELOW
+--------------------- */
+@media screen and (max-width: 768px) {
+  .flex-container {
+    display: block;
+  }
+
+  .form-group label{
+    font-size: 18px;
+  }
+  #radio-group {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  body {
+    width: auto;
+    background: none;
+  }
+  .grid-container {
+    width: auto;
+    border-radius: 0;
+  }
+  form {
+    width: 100%;
+  }
+  .form-group label{
+    flex: 0 0 100%;
+    text-align: left;
+    padding: 10px;
+  }
+  .form-group label + * {
+    flex: 0 0 100%;
+  }
+  button[type = submit] {
+    width: 100%;
+  }
+  .logo {
+    width: auto;
+    background: none;
+  }
+  .card {
+    width: 100%;
+  }
+
+   
+  h1 {
+    font-size: 22px;
+    color: #56a9e0;
+    text-align: left;
+    margin-left: 30px;
+  }
+
+
+
+
+
+}
