@@ -37,6 +37,8 @@ body {
   background-color:#56a9e0;
 }
 
+/*form descriptions*/
+
 h1 {
   text-align: center;
   font-family: 'Eczar', serif;
@@ -57,7 +59,7 @@ h2 {
   margin: 0 auto;
 }
 
-
+/*form*/
 
 form {
   max-width: 600px;
