@@ -291,4 +291,12 @@ a.SignUp-Access:active {
     margin: auto;
     margin-bottom: 20px;
   }
+  .footer {
+    position: fixed;
+    width: 100%;
+  }
+  #slogan {
+    margin-left: 5px;
+    font-size: 16px;
+  }
 }
